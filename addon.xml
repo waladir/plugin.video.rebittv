@@ -1,0 +1,54 @@
+﻿<addon id="plugin.video.rebittv" name="Rebit.tv" provider-name="waladir" version="1.0.0">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.18.4"/>
+    <import addon="inputstream.adaptive" version="19.0.0"/>
+  </requires>
+  <extension library="main.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Rebit.tv</summary>
+    <summary lang="sk_SK">Rebit.tv</summary>
+    <summary lang="cs_CZ">Rebit.tv</summary>
+    <description lang="en_GB">
+Doplnok pre Rebit.tv
+
+Poďakovanie:
+* cache za vytvorenie a podporu pôvodného doplnku
+* Rebit.tv za podporu a pomoc
+
+Ďalšie informácie a podporu nájdete na fóre www.xbmc-kodi.cz (https://www.xbmc-kodi.cz/prispevek-rebit-tv)
+    </description>
+    <description lang="sk_SK">
+Doplnok pre Rebit.tv
+
+Poďakovanie:
+* cache za vytvorenie a podporu pôvodného doplnku
+* Rebit.tv za podporu a pomoc
+
+Ďalšie informácie a podporu nájdete na fóre www.xbmc-kodi.cz (https://www.xbmc-kodi.cz/prispevek-rebit-tv)
+    </description>
+    <description lang="cs_CZ">
+Doplněk pro Rebit.tv
+
+Poděkování:
+* cache za vytvoření a podporu původního doplňku
+* Rebit.tv za podporu a pomoc
+
+Další informace a podporu najdete na fóru www.xbmc-kodi.cz (https://www.xbmc-kodi.cz/prispevek-rebit-tv)
+    </description>
+    <platform>all</platform>
+    <source>https://github.com/waladir/plugin.video.rebittv</source>
+    <news>
+
+v1.0.0 (19.12.2022)
+- první verze
+
+    </news>
+    <assets>
+        <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>

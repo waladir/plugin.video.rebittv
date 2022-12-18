@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<category label="30000">
+                <setting label="30001" type="text" id="username" default=""/>
+                <setting label="30002" type="text" id="password" option="hidden" enable="!eq(-1,false)" default=""/>
+                <setting label="30003" type="text" id="device_name" default="kodi"/>
+                <setting label="30004" type="text" id="device_id" default="" enable="false"/>
+                <setting label="Nová session" type="action" action="RunPlugin(plugin://plugin.video.rebit.tv?action=reset_session)"/>
+	</category>
+	<category label="30010">
+                <setting label="30011" type="bool" id="hide_settings" default="false"/>
+	</category>    
+	<category label="IPTV Simple Client">
+                <setting label="30020" type="folder" id="output_dir" default=""/>
+                <setting label="30021" type="bool" id="autogen" default="false"/>
+                <setting label="30022" type="slider" id="epg_interval" range="1,1,24" default="12" option="int"/>
+                <setting label="Catchup mod" type="select" id="catchup_mode" values="append|default" default="append"/>
+                <setting label="30023" type="action" action="RunPlugin(plugin://plugin.video.rebittv?action=generate_playlist)"/>
+                <setting label="30024" type="action" action="RunPlugin(plugin://plugin.video.rebittv?action=generate_epg)"/>
+	</category>      
+    <category label="30030">
+                <setting label="30031" type="bool" id="log_request_url" default="false"/>
+                <setting label="30032" type="bool" id="log_response" default="false"/>
+	</category>    
+</settings>
