@@ -1,2 +1,5 @@
+v1.0.1 (19.12.2022)
+- úprava loga a linku na fórum
+
 v1.0.0 (19.12.2022)
 - první verze
