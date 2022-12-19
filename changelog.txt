@@ -1,3 +1,6 @@
+v1.0.2 (19.12.2022)
+- oprava resetu session
+
 v1.0.1 (19.12.2022)
 - úprava loga a linku na fórum
 

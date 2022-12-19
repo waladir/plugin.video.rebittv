@@ -5,7 +5,7 @@
                 <setting label="30002" type="text" id="password" option="hidden" enable="!eq(-1,false)" default=""/>
                 <setting label="30003" type="text" id="device_name" default="kodi"/>
                 <setting label="30004" type="text" id="device_id" default="" enable="false"/>
-                <setting label="Nová session" type="action" action="RunPlugin(plugin://plugin.video.rebit.tv?action=reset_session)"/>
+                <setting label="Nová session" type="action" action="RunPlugin(plugin://plugin.video.rebittv?action=reset_session)"/>
 	</category>
 	<category label="30010">
                 <setting label="30011" type="bool" id="hide_settings" default="false"/>
