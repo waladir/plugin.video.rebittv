@@ -69,6 +69,7 @@ class Session:
     def delete_device(self, id):
         api = API()
         api.call_api(url = 'https://bbxnet.api.iptv.rebit.sk/television/clients/' + id, data = None, method = 'DELETE', headers = api.get_headers(self.access_token))
+        self.remove_session()
 
     def get_device_title(self):
         addon = xbmcaddon.Addon()

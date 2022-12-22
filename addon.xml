@@ -1,4 +1,4 @@
-﻿<addon id="plugin.video.rebittv" name="Rebit.tv" provider-name="waladir" version="1.0.2">
+﻿<addon id="plugin.video.rebittv" name="Rebit.tv" provider-name="waladir" version="1.0.3">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.18.4"/>
@@ -42,6 +42,10 @@ Další informace a podporu najdete na fóru www.xbmc-kodi.cz (https://www.xbmc-
     <platform>all</platform>
     <source>https://github.com/waladir/plugin.video.rebittv</source>
     <news>
+v1.0.3 (22.12.2022)
+- úprava zobrazení pořadů v archivu
+- vynucení vytvoření nové sessiony při smazání zařízení
+
 v1.0.2 (19.12.2022)
 - oprava resetu session
 
