@@ -1,3 +1,6 @@
+v1.0.4 (9.12.2023)
+- ošetření problému s registrací zařízení
+
 v1.0.3 (22.12.2022)
 - úprava zobrazení pořadů v archivu
 - vynucení vytvoření nové sessiony při smazání zařízení

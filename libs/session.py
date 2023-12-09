@@ -92,6 +92,8 @@ class Session:
             else:
                 xbmcgui.Dialog().notification('Rebit.tv',addon.getLocalizedString(300207), xbmcgui.NOTIFICATION_ERROR, 5000)
                 sys.exit() 
+        if 'message' in response and response['message'] == 'Client already registered.':
+            return
         if 'data' not in response or 'id' not in response['data']:
             xbmcgui.Dialog().notification('Rebit.tv',addon.getLocalizedString(300207), xbmcgui.NOTIFICATION_ERROR, 5000)
             sys.exit() 
