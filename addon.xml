@@ -1,4 +1,4 @@
-﻿<addon id="plugin.video.rebittv" name="Rebit.tv" provider-name="waladir" version="1.0.6">
+﻿<addon id="plugin.video.rebittv" name="Rebit.tv" provider-name="waladir" version="1.0.7">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests" version="2.18.4"/>
@@ -42,6 +42,9 @@ Další informace a podporu najdete na fóru www.xbmc-kodi.cz (https://www.xbmc-
     <platform>all</platform>
     <source>https://github.com/waladir/plugin.video.rebittv</source>
     <news>
+v1.0.7 (4.1.2024)
+- oprava chyby
+
 v1.0.6 (4.1.2024)
 - přidaná možnost vypnout přehrávání přes InputStream Adaptive
 
@@ -54,9 +57,6 @@ v1.0.4 (9.12.2023)
 v1.0.3 (22.12.2022)
 - úprava zobrazení pořadů v archivu
 - vynucení vytvoření nové sessiony při smazání zařízení
-
-v1.0.2 (19.12.2022)
-- oprava resetu session
     </news>
     <assets>
         <icon>icon.png</icon>
