@@ -57,7 +57,7 @@ v1.0.3 (22.12.2022)
 
 v1.0.2 (19.12.2022)
 - oprava resetu session
-    /news>
+    </news>
     <assets>
         <icon>icon.png</icon>
     </assets>
