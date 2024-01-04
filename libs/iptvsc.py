@@ -9,7 +9,6 @@ from datetime import datetime
 import time
 
 from libs.channels import Channels
-from libs.channels import Session
 from libs.utils import plugin_id
 from libs.epg import get_channel_epg
 
@@ -71,10 +70,11 @@ def generate_playlist(output_file = ''):
                     line = '#EXTINF:-1 catchup="append" catchup-days="7" catchup-source="&catchup_start_ts={utc}&catchup_end_ts={utcend}" tvg-chno="' + str(number) + '" tvg-id="' + channels_list[number]['name'] + '" tvh-epg="0" tvg-logo="' + logo + '",' + channels_list[number]['name']
                 file.write(bytearray((line + '\n').encode('utf-8')))
                 line = 'plugin://' + plugin_id + '/?action=iptsc_play_stream&id=' + str(channels_list[number]['id'])
-                file.write(bytearray(('#KODIPROP:inputstream=inputstream.ffmpegdirect\n').encode('utf-8')))
-                file.write(bytearray(('#KODIPROP:inputstream.ffmpegdirect.stream_mode=timeshift\n').encode('utf-8')))
-                file.write(bytearray(('#KODIPROP:inputstream.ffmpegdirect.is_realtime_stream=true\n').encode('utf-8')))
-                file.write(bytearray(('#KODIPROP:mimetype=video/mp2t\n').encode('utf-8')))
+                if addon.getSetting('isa') != 'true':
+                    file.write(bytearray(('#KODIPROP:inputstream=inputstream.ffmpegdirect\n').encode('utf-8')))
+                    file.write(bytearray(('#KODIPROP:inputstream.ffmpegdirect.stream_mode=timeshift\n').encode('utf-8')))
+                    file.write(bytearray(('#KODIPROP:inputstream.ffmpegdirect.is_realtime_stream=true\n').encode('utf-8')))
+                    file.write(bytearray(('#KODIPROP:mimetype=video/mp2t\n').encode('utf-8')))
                 file.write(bytearray((line + '\n').encode('utf-8')))
             file.close()
             xbmcgui.Dialog().notification('Rebit.tv', addon.getLocalizedString(300314), xbmcgui.NOTIFICATION_INFO, 5000)    

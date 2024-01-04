@@ -4,12 +4,9 @@ import xbmcgui
 import xbmcplugin
 import xbmcaddon
 
-from datetime import datetime
-import time
-
 from libs.session import Session
 from libs.api import API
-from libs.epg import get_channel_epg, epg_listitem
+from libs.epg import get_channel_epg
 
 if len(sys.argv) > 1:
     _handle = int(sys.argv[1])
@@ -31,8 +28,9 @@ def play_live(id):
     if 'data' in response and 'link' in response['data'] and response['data']['link']:
         url = response['data']['link']
         list_item = xbmcgui.ListItem(path = url)
-        list_item.setProperty('inputstream', 'inputstream.adaptive')
-        list_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
+        if addon.getSetting('isa') != 'true':
+            list_item.setProperty('inputstream', 'inputstream.adaptive')
+            list_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
         list_item.setContentLookup(False)       
         xbmcplugin.setResolvedUrl(_handle, True, list_item)
     else:
@@ -46,8 +44,9 @@ def play_archive(id, channel_id):
     if 'data' in response and 'link' in response['data'] and response['data']['link']:
         url = response['data']['link']
         list_item = xbmcgui.ListItem(path = url)
-        list_item.setProperty('inputstream', 'inputstream.adaptive')
-        list_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
+        if addon.getSetting('isa') != 'true':
+            list_item.setProperty('inputstream', 'inputstream.adaptive')
+            list_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
         list_item.setContentLookup(False)       
         xbmcplugin.setResolvedUrl(_handle, True, list_item)
     else:

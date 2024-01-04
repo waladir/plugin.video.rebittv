@@ -33,6 +33,10 @@ msgctxt "#30011"
 msgid "Skryť nastavenia v menu"
 msgstr ""
 
+msgctxt "#30012"
+msgid "Prehrávať cez InputStream Adaptive"
+msgstr ""
+
 msgctxt "#30020"
 msgid "Adresár pre playlist a EPG"
 msgstr ""

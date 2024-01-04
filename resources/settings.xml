@@ -9,6 +9,7 @@
 	</category>
 	<category label="30010">
                 <setting label="30011" type="bool" id="hide_settings" default="false"/>
+                <setting label="30012" type="bool" id="isa" default="true"/>
 	</category>    
 	<category label="IPTV Simple Client">
                 <setting label="30020" type="folder" id="output_dir" default=""/>
