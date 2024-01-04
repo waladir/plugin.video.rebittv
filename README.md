@@ -7,8 +7,8 @@
 v1.0.6 (4.1.2024)<br>
 - přidaná možnost vypnout přehrávání přes InputStream Adaptive<br><br>
 
-v1.0.5 (11.12.2023)
-- oprava metadat doplňku
+v1.0.5 (11.12.2023)<br>
+- oprava metadat doplňku<br><br>
 
 v1.0.4 (9.12.2023)<br>
 - ošetření problému s registrací zařízení<br><br>
