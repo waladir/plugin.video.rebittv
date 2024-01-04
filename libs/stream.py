@@ -28,7 +28,7 @@ def play_live(id):
     if 'data' in response and 'link' in response['data'] and response['data']['link']:
         url = response['data']['link']
         list_item = xbmcgui.ListItem(path = url)
-        if addon.getSetting('isa') != 'true':
+        if addon.getSetting('isa') = 'true':
             list_item.setProperty('inputstream', 'inputstream.adaptive')
             list_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
         list_item.setContentLookup(False)       
@@ -44,7 +44,7 @@ def play_archive(id, channel_id):
     if 'data' in response and 'link' in response['data'] and response['data']['link']:
         url = response['data']['link']
         list_item = xbmcgui.ListItem(path = url)
-        if addon.getSetting('isa') != 'true':
+        if addon.getSetting('isa') == 'true':
             list_item.setProperty('inputstream', 'inputstream.adaptive')
             list_item.setProperty('inputstream.adaptive.manifest_type', 'hls')
         list_item.setContentLookup(False)       
