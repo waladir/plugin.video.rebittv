@@ -14,7 +14,7 @@ if len(sys.argv) > 1:
 def play_catchup(id, start_ts, end_ts):
     start_ts = int(start_ts)
     end_ts = int(end_ts)
-    epg = get_channel_epg(id = id, from_ts = start_ts, to_ts = end_ts + 60*60*12)
+    epg = get_channel_epg(id = id, from_ts = start_ts - 60*60*2, to_ts = end_ts + 60*60*12)
     if start_ts in epg:
         play_archive(id = epg[start_ts]['id'], channel_id = id)
     else:
